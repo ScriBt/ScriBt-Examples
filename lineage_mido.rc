@@ -1,0 +1,56 @@
+# ScriBt Automation Config
+# Example Configuration for building Lineage-14.1 for the Xiaomi Redmi Note 4
+
+AUTOMATOR="true_dat";
+
+#################
+#  Information  #
+#################
+
+# Sync
+SBJOBS="4";
+SBF="y";
+SBS="n";
+SBC="y";
+SBB="y";
+# Init
+SBRN="17";
+SBNBR="0 cm-14.1";
+#SBRF="y";
+#SBRFL="/home/arvind/aosp";
+SBCD="n";
+SBDEP="1";
+# Device-Info
+SBDEV="mido";
+SBCM="xiaomi";
+SBBT="userdebug";
+SBDTP="common_full_phone";
+# Build
+SBBO="1";
+SBSLT="lunch";
+SBMK="mka";
+SBNT="";
+SBOD="y";
+SBOL="/home/arvind/rtemp";
+SBCL="2";
+SBJK="y";
+SBNJ="y";
+# Pre-Build
+SBBTR=
+SBNMK="0";
+SBLOC=();
+
+#######################
+#  Function Sequence  #
+#######################
+
+# Get the Device source
+for repo in android_device_xiaomi_mido android_kernel_xiaomi_msm8953 proprietary_vendor_xiaomi; do
+    git clone https://github.com/TheScarastic/$repo -b cm-14.1 `echo $repo | sed -e 's/android_//g' -e 's/proprietary_//g' -e 's/_/\//g'`;
+done;
+
+# ScriBt methods - Default Sequence
+init;
+sync;
+pre_build;
+build;

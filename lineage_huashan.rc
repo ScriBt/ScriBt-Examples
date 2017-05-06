@@ -1,0 +1,53 @@
+# ScriBt Automation Config
+# Example Configuration for building Lineage-14.1 for the Xperia SP
+
+AUTOMATOR="true_dat";
+
+#################
+#  Information  #
+#################
+
+# Sync
+SBJOBS="4";
+SBF="y";
+SBS="n";
+SBC="y";
+SBB="y";
+# Init
+SBRN="17";
+SBNBR="0 cm-14.1";
+#SBRF="y";
+#SBRFL="/home/arvind/aosp";
+SBCD="n";
+SBDEP="1";
+# Device-Info
+SBDEV="huashan";
+SBCM="sony";
+SBBT="userdebug";
+SBDTP="common_full_phone";
+# Build
+SBBO="1";
+SBSLT="lunch";
+SBMK="mka";
+SBNT="";
+SBOD="y";
+SBOL="/home/arvind/rtemp";
+SBCL="2";
+SBJK="y";
+SBNJ="y";
+# Pre-Build
+SBBTR=
+SBNMK="0";
+SBLOC=();
+
+#######################
+#  Function Sequence  #
+#######################
+
+# Get the Device manifest
+curl --create-dirs -o .repo/local_manifests/huashan.xml https://raw.githubusercontent.com/AdrianDC/lineage_development_sony8960/local_manifests/huashan.xml
+# ScriBt methods - Default Sequence
+init;
+sync;
+pre_build;
+build;
