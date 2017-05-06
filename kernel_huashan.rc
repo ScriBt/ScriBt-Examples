@@ -1,0 +1,30 @@
+AUTOMATOR="true_dat";
+
+########################
+# Custom User and Host #
+########################
+
+SBCUH="Y";                                  # Enter 'y' or 'Y' if you want to set either of them
+SBCU="arvind";                              # Your Custom Username here
+SBCH="AutoBot";                             # Your Custom Hostname here
+
+###################
+# Kernel Building #
+###################
+
+SBBO=4;
+SBKO=5;
+SBKL="/home/arvind/kernel/sony/msm8960t";
+SBDEV="huashan";
+SBKD="viskan_huashan_defconfig";
+SBKA="arm";
+SBKTL="/home/arvind/arm-linux-androideabi-4.9/";
+SBCK=2;
+SBNT=2;
+
+# Clone the Kernel
+git clone https://github.com/AdrianDC/android_kernel_sony_msm8960t -b cm-14.1 kernel/sony/msm8960t
+# Clone the Toolchain
+git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 tc;
+# Build eet
+build;

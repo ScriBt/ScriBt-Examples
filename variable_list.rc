@@ -1,0 +1,77 @@
+# ScriBt's List of variables
+# Necessary for Complete Automation
+# Double Quote Entered Values, Recommended
+
+########
+# Sync #
+########
+
+SBJOBS=                                 # No of Threads for Sync [Integral Values Plz]
+SBF=                                    # Force Sync ? [y/n]
+SBS=                                    # Silent sync ? [y/n]
+SBC=                                    # Sync Current Branch ? [y/n]
+SBB=                                    # Use clone-bundle ? [y/n]
+
+############
+# ROM-Init #
+############
+
+SBRN=                                   # ROM Selection Number [Refer ROM.sh / README.md]
+SBNBR=                                  # Format: [ID] [Branch]
+SBRF=                                   # Have a Reference ? [y/n]
+SBRFL=                                  # Reference Source's Location from /
+SBCD=                                   # Set a Clone-Depth ? [y/n]
+SBDEP=1;                                # Depth Value (Default 1)
+
+###############
+# Device Info #
+###############
+
+SBDEV=                                  # Device codename (Lowercases)
+SBBT=                                   # userdebug / user / eng
+SBCM=                                   # Device Company / Vendor
+SBDTP=                                  # Device Type
+
+#########
+# Build #
+#########
+
+SBBO=1;  # SBBO=1 for Start Build with Zip Generation at the End Better not to change
+SBSLT=                                  # lunch / brunch / breakfast
+SBMK=                                   # make / mka
+SBNT=                                   # Number of threads / Jobs [ Leave Blank if using mka ]
+SBOD=                                   # Want to place out in another directory ? [y/n]
+SBOL=                                   # Desired Location of /out
+SBCL=                                   # Clean Before Build? [ 1 for installclean & 2 for total clean ]
+SBJK=                                   # Use Jack Toolchain [y/n] ?
+SBNJ=                                   # Use Ninja Toolchain [y/n] ?
+
+########################
+# Custom User and Host #
+########################
+
+SBCUH=                                  # Enter 'y' or 'Y' if you want to set either of them
+SBCU=                                   # Your Custom Username here
+SBCH=                                   # Your Custom Hostname here
+
+###################
+# Kernel Building #
+###################
+
+SBKO=5;                                 # 5 - Build Kernel. It'd go through 1,2,3,4 before going to 5
+SBKL=                                   # Location of Kernel Source
+#SBDEV                                  # Device codename, already set above
+SBKD=                                   # Location of Defconfig in Kernel tree
+SBKA=                                   # CPU Architecture
+SBKTL=                                  # Kernel toolchain location
+SBCK=                                   # Option to clean Kernel
+#SBNT                                   # No. of threads, already mentioned
+
+#############
+# Pre-Build #
+#############
+
+SBBTR=                                  # Boot Anim Resolution Value (as instructed in main ScriBt)
+SBNMK=                                  # No of Makefile calls you want to add
+SBLOC=(    );                           # Enter Location of each Makefile, seperated by spaces...
+                                       # ...Example > LOC=( vendor/ex1/exmp.mk vendor/ex2/exmp.mk some/file/here.mk)
