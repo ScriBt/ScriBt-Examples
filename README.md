@@ -10,8 +10,13 @@ Example files for understanding / making use of ScriBt
 
 ### Files
 
-* **ScriBtZero.sh** - Zeroth Version of ScriBt - This is where it all started
+* **[ScriBtZero.sh](https://github.com/ScriBt/ScriBt-Examples/blob/master/ScriBtZero.sh)** - Zeroth Version of ScriBt - This is where it all
+started
 
-* **kernel_huashan.rc**, **lineage_huashan.rc**, **lineage_mido.rc** - ScriBt Automation Configurations
+* **[kernel_huashan.rc](https://github.com/ScriBt/ScriBt-Examples/blob/master/kernel_huashan.rc)**, **[lineage_huashan.rc](https://github.com/ScriBt/ScriBt-Examples/blob/master/lineage_huashan.rc)**, **[lineage_mido.rc](https://github.com/ScriBt/ScriBt-Examples/blob/master/lineage_mido.rc)** - ScriBt Automation Configurations
 
-* **variables_list.rc** - List of Variables to be used for Complete Automation of ScriBt
+* **[variables_list.rc](https://github.com/ScriBt/ScriBt-Examples/blob/master/variables_list.rc)** - List of Variables to be used for Complete Automation of ScriBt
+
+* **[shellcheck.sh](https://github.com/ScriBt/ScriBt-Examples/blob/master/shellcheck.sh)** - Automated shellcheck script for TravisCI  
+ _Makes use of 'shellcheck' for checking ScriBt's files  
+Repository : https://github.com/koalaman/shellcheck_
