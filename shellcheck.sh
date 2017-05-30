@@ -18,7 +18,7 @@ function derpcheck()
 } # derpcheck
 
 # Flags to be disabled for ROM.sh
-export SCOPTS_ROMsh="-e SC2155 -e SC2120 -e SC2119 -e SC2086 -e SC2046 -e SC2153 -e SC2016 -e SC2030 -e SC2031";
+export SCOPTS_ROMsh="-e SC2154 -e SC2155 -e SC2120 -e SC2119 -e SC2086 -e SC2046 -e SC2153 -e SC2016 -e SC2030 -e SC2031";
 # Flags to be disabled on ROM.rc
 export SCOPTS_ROMrc="-e SC2034 -e SC2153 -e SC2154";
 # Flags to be disabled on upScriBt.sh
