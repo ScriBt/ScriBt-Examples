@@ -24,7 +24,7 @@ export SCOPTS_ROMsh="-e SC2154 -e SC2155 -e SC2120 -e SC2119 -e SC2086 -e SC2046
 # Flags to be disabled for src files
 export SCOPTS_src="-e SC2034";
 # Common Flags
-export COMMON="-e SC2164 -e SC1090";
+export COMMON="-e SC2164 -e SC1090 -e SC1091";
 
 # Run derpCheck
 echo -e "\n${EXE} Running shellcheck on ${WYT}ROM.sh${NONE}";
