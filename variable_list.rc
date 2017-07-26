@@ -1,6 +1,9 @@
 # ScriBt's List of variables
 # Necessary for Complete Automation
-# Double Quote Entered Values, Recommended
+
+################################################
+# ! Double Quote Entered Values, Recommended ! #
+################################################
 
 ########
 # Sync #
@@ -16,7 +19,7 @@ SBB=                                    # Use clone-bundle ? [y/n]
 # ROM-Init #
 ############
 
-SBRN=                                   # ROM Selection Number [Refer ROM.sh / README.md]
+SBRN=                                   # ROM Selection Number [Refer https://scribt.github.io/wiki/buildable-roms.html]
 SBNBR=                                  # Format: [ID] [Branch]
 SBRF=                                   # Have a Reference ? [y/n]
 SBRFL=                                  # Reference Source's Location from /
@@ -29,7 +32,6 @@ SBDEP=1;                                # Depth Value (Default 1)
 
 SBDEV=                                  # Device codename (Lowercases)
 SBBT=                                   # userdebug / user / eng
-SBCM=                                   # Device Company / Vendor
 SBDTP=                                  # Device Type
 
 #########
@@ -45,6 +47,7 @@ SBOL=                                   # Desired Location of /out
 SBCL=                                   # Clean Before Build? [ 1 for installclean & 2 for total clean ]
 SBJK=                                   # Use Jack Toolchain [y/n] ?
 SBNJ=                                   # Use Ninja Toolchain [y/n] ?
+SBJWA=                                  # Use Jack Workarounds [y/n] ?
 
 ########################
 # Custom User and Host #
@@ -66,6 +69,7 @@ SBKA=                                   # CPU Architecture
 SBKTL=                                  # Kernel toolchain location
 SBCK=                                   # Option to clean Kernel
 #SBNT                                   # No. of threads, already mentioned
+SBKOUT=                                 # Kernel Output Directory
 
 #############
 # Pre-Build #
