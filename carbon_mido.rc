@@ -1,0 +1,69 @@
+# ScriBt Automation Config
+# CarbonROM for mido
+
+AUTOMATOR="true_dat";
+
+########
+# Sync #
+########
+
+SBJOBS="8";
+SBF="y";
+SBS="n";
+SBC="y";
+SBB="y";
+
+############
+# ROM-Init #
+############
+
+SBRN="9";
+SBNBR="0 cr-5.1";
+SBRF="y";
+SBRFL="/home/arvind/carbon-reference";
+
+###############
+# Device Info #
+###############
+
+SBDEV="mido";
+SBBT="userdebug";
+SBDTP="common_full_phone";
+
+#########
+# Build #
+#########
+
+SBBO="1";
+SBSLT="lunch";
+SBMK="mka";
+SBOD="y";
+SBOL="/home/arvind/out";
+SBCL="2";
+SBJK="y";
+SBNJ="y";
+SBJWA="n";
+
+########################
+# Custom User and Host #
+########################
+
+SBCUH="y";
+SBCU="arvind";
+SBCH="ScriBtofy";
+
+#############
+# Pre-Build #
+#############
+
+SBNMK="1";
+SBLOC=( "vendor/carbon/config/gsm.mk" );
+
+#######################
+#  Function Sequence  #
+#######################
+
+init;
+sync;
+pre_build;
+build;
